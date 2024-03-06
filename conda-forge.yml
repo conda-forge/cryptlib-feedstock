@@ -1,11 +1,14 @@
 build_platform:
   osx_arm64: osx_64
-conda_build:
-  error_overlinking: true
-conda_forge_output_validation: true
+os_version:
+  linux_64: cos7
 github:
   branch_name: main
   tooling_branch_name: main
-os_version:
-  linux_64: cos7
+conda_build:
+  error_overlinking: true
+conda_forge_output_validation: true
 test: native_and_emulated
+provider:
+  linux_aarch64: default
+  linux_ppc64le: default
